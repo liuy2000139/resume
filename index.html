@@ -2,17 +2,339 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RESUME</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="./img/all.png" type="image/x-icon">
+  <title>RESUME</title>
 
 </head>
 
 <body>
-    <div class="resume">
-        <h1>12321</h1>
+<my-resume></my-resume>
+
+<template id="my-resume">
+  <div class="resume color-red">
+
+    <div class="content">
+      <div class="introduce">
+        <h3>个人介绍<span class="no-print"><a href="./前端_刘勇.pdf" download>&nbsp;&nbsp;（下载PDF）</a></span>
+        </h3>
+        <ul>
+          <li>姓 名：刘勇</li>
+          <li>电 话：13980684676</li>
+          <li>学 历：本科</li>
+          <li>学 校：长安大学(211)</li>
+          <li>邮 箱：<a href="mailto:liuy1994g@gmail.com">liuy1994g@gmail.com</a></li>
+          <li>简 历：<a href="https://liuy2000139.github.io/resume/"
+                       target="_blank">https://liuy2000139.github.io/resume</a>
+          </li>
+        </ul>
+      </div>
+      <div class="works">
+        <h3>教育经历</h3>
+        <ul>
+          <li>
+            <h4>1、2012.09 - 2016.07 长安大学</h4>
+            <p>完成大学本科课程，取得大学英语四级证书、学士学位证书与本科毕业证书</p>
+          </li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3>技能总结</h3>
+        <ul>
+          <li>
+            <p>熟练掌握Web标准技术栈，对HTML、CSS、JavaScript有深入理解，熟练掌握常用前端工程化工具及浏览器API操作</p>
+          </li>
+          <li>
+            <p>熟练掌握 <span>React</span>、<span>Vue</span> 两大主流前端框架及其配套生态，熟练运用相应的开发和构建工具，能够针对不同场景制定合理的性能优化和打包策略
+            </p>
+          </li>
+          <li>
+            <p>拥有丰富的移动端开发经验，熟练掌握 <span>Taro.js </span>、<span>Uni App</span>等主流跨端开发框架，能够高效构建一致的多端体验
+            </p>
+          </li>
+          <li>
+            <p>了解基础的服务端架构和部署流程，掌握<span>Nginx</span>反向代理、<span>Jenkins</span>自动化部署、Docker容器化部署等常用技术，能独立完成简单的运维任务
+            </p>
+          </li>
+          <li>
+            <p>了解 <span>Egg.js </span>框架开发，掌握中间件和插件机制实现功能模块化，遵循RESTful API设计范式，提供规范统一的接口服务
+            </p>
+          </li>
+          <li>
+            <p>乐于学习新的技术（不仅限于前端)，能够阅读英文文档，Google 重度使用者 </p>
+          </li>
+        </ul>
+      </div>
+      <div class="about">
+        <h3>工作经历</h3>
+        <ul>
+          <li>
+            <h4>1、2023.10 - 至今 普华永道数智科技</h4>
+            <p>
+              项目制的运营模式，负责或参与各个前端项目的开发与需求迭代，对标最佳实践，优化架构设计，提升系统性能与可维护性</p>
+          </li>
+          <li>
+            <h4>2、2021.05 - 2023.09 上海维智卓新</h4>
+            <p>
+              负责整合营销平台系统，制定技术选型策略并负责落地实施，全面规划技术架构升级方案，引入前沿技术栈，实现系统现代化</p>
+            <p>负责前端团队的资源调配与人力规划，灵活安排开发任务，科学评估工作量并优化流程，最大限度提升团队效能</p>
+          </li>
+          <li>
+            <h4>3、2020.02 - 2021.04 杭州广目</h4>
+            <p>负责管理系统与大屏展示系统的技术架构搭建，制定技术选型方案并把控整体实施质量</p>
+            <p>承担核心模块的开发工作，把控需求开发质量，促进项目高效迭代</p>
+          </li>
+          <li>
+            <h4>4、2017.12 - 2020.02 杭州玄同</h4>
+            <p>参与公司主力产品的业务功能模块开发，并负责后续的需求迭代和版本维护工作</p>
+            <p>高质量交付并持续优化公共业务组件，提升代码复用性，为产品线高效交付保驾护航</p>
+          </li>
+        </ul>
+      </div>
+      <div class="projects">
+        <h3> 项目总结 </h3>
+        <ul>
+          <li>
+            <h4>1、风控小程序（普华永道数智科技）</h4>
+            <p>项目描述：构建风险预警移动端解决方案，覆盖小程序和H5两种运行模式，以直观图表形式展示公司风险指标数据</p>
+            <p>项目周期：7个月</p>
+            <p>主要职责：独立承担技术选型、系统架构设计与核心模块开发，解决小程序环境的适配性挑战，优化资源加载策略</p>
+            <p>
+              相关技术：<span>Uni App</span> + <span>Vue 2</span> 构建的移动端项目，初期部署为H5，最终发布为微信小程序。通过对
+              <span>Echarts</span> 各类型图表组件的二次封装，极高地提升了开发效率并降低了维护成本，并通过
+              <span>异步分包</span> 策略将项目中的大文件进行单独分包最终显著地减小了主包体积
+            </p>
+          </li>
+          <li>
+            <h4>2、整合营销平台（上海维智卓新）</h4>
+            <p>
+              项目描述：面向广告主的营销数字化整体解决方案，涵盖运营管理、数据资源管理及可视化报表等核心系统</p>
+            <p>项目周期：长期迭代</p>
+            <p>主要职责：负责整体架构设计和系统开发，实施前沿微前端架构，标准化权限管理体系，提升开发效能和长期可维护性</p>
+            <p>
+              相关技术：基于<span>Umi.js</span> 脚手架 + <span>Ant Design Pro</span> 构建的React 单页应用。
+              利用 <span>qiankun</span> 将其改造为微前端架构系统，从业务角度拆分为多个独立可交付模块。
+              使用<span>AntV L7</span>+ <span>高德地图API</span>
+              进行地图数据渲染及交互并封装基础地图库以便复用，使用<span>AntV G2Plot</span> 实现数据的图标可视化。
+              在协同开发方面通过<span>ESLint</span> + <span>Prettier</span> 制定严格统一的代码规范和风格，提高开发效率和协作效率
+            </p>
+          </li>
+          <li>
+            <h4>3、视觉标注管理系统（ 杭州广目）</h4>
+            <p>
+              项目描述：构建统一的视觉数据标注平台，支持原始数据管理、任务创建、UE4三维模型渲染与人工标注等核心功能</p>
+            <p>项目周期：4个月</p>
+            <p>主要职责：评审需求并参与技术选型，负责整体前端系统架构搭建和开发实施，把控三维模型渲染性能和交互体验</p>
+            <p>相关技术：基于<span>Vue 3</span> + <span>Typescript</span> 构建的单页应用，使用<span>Element Plus</span>
+              实现基本UI
+              布局，利用<span>Canvas </span>实现对图像的框选及裁剪等操作。使用<span>AntV G2Plot </span>库实现对图表数据的展示，使用<span>Three.js </span>实现对UE4
+              模型的展示和交互</p>
+          </li>
+          <li>
+            <h4>4、B2b商城（杭州玄同）</h4>
+            <p>
+              项目描述：美国某安防行业公司的线上业务拓展，将原本只能在线下进行的业务转移到线上，方便分销商更快捷方便地执行采购业务，包括基本的搜索、商品展示、购买、退货功能</p>
+            <p>项目周期：长期迭代</p>
+            <p>主要职责：参与原型和设计稿的评审和修改建议，进行负责模块的开发和维护。针对业务需求，在
+              <span>Element-UI</span> 在组件库的基础上进行二次封装，作为公共组件，例如表格、上传、各种输入框等</p>
+            <p>相关技术：基于<span>Vue.js</span> + <span>Vue-Router</span> + <span>Vuex</span>构建的单页应用，使用<span>Nuxt.js</span>
+              进行服务端渲染，加快首页渲染速度以及实现SEO 需求</p>
+          </li>
+        </ul>
+      </div>
     </div>
+
+  </div>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      ol, ul {
+          list-style: none
+      }
+
+      *::before, *::after {
+          box-sizing: border-box;
+      }
+
+      a {
+          text-decoration: none;
+          color: inherit;
+      }
+
+      body {
+          font-family: Helvetica, sans-serif;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+          font-weight: normal;
+      }
+
+      span {
+          color: #dd50dc;
+          font-weight: bold;
+      }
+
+      html {
+          width: 100%;
+          background-color: #fff !important;
+      }
+
+      @media print {
+          .no-print {
+              display: none;
+          }
+      }
+
+      .resume {
+          max-width: 980px;
+          min-width: 760px;
+          margin: 0 auto;
+      }
+
+      .content {
+          margin: 0 30px;
+      }
+
+      .content h3 {
+          color: #08b;
+          font-weight: bold;
+          position: relative;
+          padding-left: 36px;
+          line-height: 40px;
+          margin-bottom: 6px;
+
+          margin-top: 6px;
+      }
+
+      .content h3::before {
+          content: '';
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          top: 0px;
+          left: -15px;
+          border-radius: 50%;
+      }
+
+      .content h4 {
+          font-weight: bold;
+          line-height: 24px;
+          padding-bottom: 2px;
+
+          padding-top: 10px;
+      }
+
+      .content ul {
+          margin-left: 40px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #aaa;
+      }
+
+      .content p {
+          padding-left: 2em;
+      }
+
+      .introduce ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      }
+
+      .introduce li {
+          width: 280px;
+          line-height: 1.5;
+      }
+
+      .introduce li:nth-child(2n) {
+          width: 340px;
+          line-height: 1.5;
+      }
+
+
+      .introduce h3::before {
+          background: url(./img/1.png) no-repeat 4px 4px;
+          background-size: 30px 30px;
+          background-color: #08b;
+      }
+
+      .skills h3::before {
+          background: url(./img/2.png) no-repeat 4px 4px;
+          background-size: 30px 30px;
+          background-color: #08b;
+      }
+
+
+      .skills li {
+          list-style: disc;
+          margin-left: 20px;
+      }
+
+      .skills p {
+          line-height: 2em;
+          padding-left: 0;
+      }
+
+      .projects li {
+          margin-bottom: 10px;
+
+      }
+
+      .projects li ul {
+          list-style: disc;
+          padding-left: 12px;
+      }
+
+      .projects ul {
+          border-bottom: none;
+      }
+
+      .projects li ul p {
+          padding-left: 0;
+      }
+
+      .projects img {
+          width: 60%;
+          margin-left: 20%;
+      }
+
+      .projects h3::before {
+          background: url(./img/3.png) no-repeat 4px 4px;
+          background-size: 30px 30px;
+          background-color: #08b;
+      }
+
+      .works h3::before {
+          background: url(./img/4.png) no-repeat 4px 4px;
+          background-size: 30px 30px;
+          background-color: #08b;
+      }
+
+      .works p {
+          text-indent: -5em;
+          padding-left: 7em;
+      }
+
+      .about h3::before {
+          background: url(./img/5.png) no-repeat 4px 4px;
+          background-size: 30px 30px;
+          background-color: #08b;
+      }
+
+
+      p {
+          line-height: 1.5;
+      }
+
+  </style>
+
+</template>
+<script src="./js/index.js"></script>
 
 </body>
 
